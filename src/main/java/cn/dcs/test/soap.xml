@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<soapenv:Body>
+		<receive xmlns="">
+			<Query_Number xsi:type="xsd:string">[1]c8:64:c7:a1:27:ae
+			</Query_Number>
+			<Query_Begin_Time xsi:type="xsd:string">2012-03-16 23:00:00
+			</Query_Begin_Time>
+			<Query_End_Time xsi:type="xsd:string">2012-03-16 23:59:59
+			</Query_End_Time>
+			<Query_Flag xsi:type="xsd:int">0</Query_Flag>
+		</receive>
+	</soapenv:Body>
+</soapenv:Envelope>

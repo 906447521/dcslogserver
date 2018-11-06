@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE PUBLIC><!-- the proxool configuration can be embedded within your own application's.Anything outside the "proxool" tag is ignored. -->
+<proxool>
+	<alias>DCSDBETL</alias>
+	<driver-url>jdbc:mysql://61.139.5.229:3306/dcsdbetl?characterEncoding=utf-8</driver-url>
+	<driver-class>com.mysql.jdbc.Driver</driver-class>
+	<driver-properties>
+		<property name="user" value="dcsdb" />
+		<property name="password" value="kongbai2010" />
+	</driver-properties>
+	<maximum-connection-count>100</maximum-connection-count>
+	<minimum-connection-count>2</minimum-connection-count>
+	<house-keeping-sleep-time>90000</house-keeping-sleep-time>
+	<!-- once operation max title 15 minute(Unit:ms) -->      
+	<maximum-active-time>900000</maximum-active-time>      
+	<!-- thread life 4 hour(Unit:ms) -->  
+	<maximum-connection-lifetime>14400000</maximum-connection-lifetime>    
+	<!-- auto check connection state operation -->      
+	<test-before-use>true</test-before-use>      
+	<!-- auto check connection sql -->      
+	<house-keeping-test-sql>select 1 + 1</house-keeping-test-sql>      
+	<prototype-count>2</prototype-count>
+	<!-- jndi name -->
+	<jndi-name>SERVICE.JNDI</jndi-name>
+</proxool>
